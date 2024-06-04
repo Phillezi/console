@@ -47,6 +47,7 @@ import { Volume } from "@kthcloud/go-deploy-types/types/v2/body";
 import { AlertList } from "../../components/AlertList";
 import { Specs } from "./Specs";
 import { ReplicaStatus } from "./deployments/ReplicaStatus";
+import InitCommandManager from "./deployments/InitCommandManager";
 
 export function Edit() {
   const { t } = useTranslation();
@@ -341,6 +342,10 @@ export function Edit() {
 
               {resource.type === "deployment" && (
                 <EnvManager deployment={resource as Deployment} />
+              )}
+
+              {resource.type === "deployment" && (
+                <InitCommandManager deployment={resource as Deployment} />
               )}
 
               {resource.type === "deployment" && (

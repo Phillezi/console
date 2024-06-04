@@ -528,6 +528,10 @@
         "error-copying-user-id": "Could not copy user ID",
         "copied-user-id": "Copied user ID",
         "error-copying-user-id-user-is-null": "Could not copy user ID from user since user is null",
-        "not-permitted-to-gpu-page": "Cannot access GPU page: Not allowed to use GPUs"
+        "not-permitted-to-gpu-page": "Cannot access GPU page: Not allowed to use GPUs",
+        "create-deployment-initcmd": "Initialization commands",
+        "create-deployment-initcmd-subheader": "Initialization commands are commands that get passed to your deployment. Separated by space.",
+        "saving-initcmd-update": "Saving initialization commands update...",
+        "could-not-save-initcmd": "Could not save initialization commands"
     }
 }
