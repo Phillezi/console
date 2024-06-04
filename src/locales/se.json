@@ -531,6 +531,7 @@
         "create-deployment-initcmd": "Initieringskommandon",
         "create-deployment-initcmd-subheader": "Initieringskommandon är kommandon som skickas till din deployment. Separerade på mellanslag.",
         "saving-initcmd-update": "Sparar initieringskommandon...",
-        "could-not-save-initcmd": "Kunde inte spara initieringskommandon"
+        "could-not-save-initcmd": "Kunde inte spara initieringskommandon",
+        "too-many-initcmds-warning": "För många kommandon, max 100"
     }
 }

@@ -56,7 +56,12 @@ export default function InitCommandManager({
     }
   };
   useEffect(() => {
-    console.log(JSON.stringify(commands));
+    console.log(JSON.stringify(commands)); //debug
+    if (commands.length > 100) {
+      enqueueSnackbar(t("too-many-initcmds-warning"), {
+        variant: "warning",
+      });
+    }
   }, [commands]);
   return (
     <Card sx={{ boxShadow: 20 }}>

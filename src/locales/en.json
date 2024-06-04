@@ -532,6 +532,7 @@
         "create-deployment-initcmd": "Initialization commands",
         "create-deployment-initcmd-subheader": "Initialization commands are commands that get passed to your deployment. Separated by space.",
         "saving-initcmd-update": "Saving initialization commands update...",
-        "could-not-save-initcmd": "Could not save initialization commands"
+        "could-not-save-initcmd": "Could not save initialization commands",
+        "too-many-initcmds-warning": "Too many commands, max 100"
     }
 }
