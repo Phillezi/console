@@ -23,7 +23,9 @@ export default function InitCommandManager({
   deployment: Deployment;
 }) {
   const [loading, setLoading] = useState<boolean>(false);
-  const [commands, setCommands] = useState<string[]>([]);
+  const [commands, setCommands] = useState<string[]>(
+    deployment.initCommands ? deployment.initCommands : []
+  );
   const { t } = useTranslation();
   const { initialized, keycloak } = useKeycloak();
   const { queueJob } = useResource();
@@ -56,7 +58,6 @@ export default function InitCommandManager({
     }
   };
   useEffect(() => {
-    console.log(JSON.stringify(commands)); //debug
     if (commands.length > 100) {
       enqueueSnackbar(t("too-many-initcmds-warning"), {
         variant: "warning",
